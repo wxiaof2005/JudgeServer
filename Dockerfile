@@ -1,5 +1,5 @@
 #FROM registry.docker-cn.com/library/ubuntu:16.04
-FROM registry.cn-hangzhou.aliyuncs.com/ubuntu16/ubuntu16
+FROM registry.cn-hangzhou.aliyuncs.com/ubuntu16/ubuntu16:v2
 
 COPY build/java_policy /etc
 
