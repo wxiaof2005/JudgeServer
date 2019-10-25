@@ -187,6 +187,7 @@ def server(path):
             #    raise TokenVerificationFailed("invalid token")
             try:
                 data = request.json
+                logger.info("---data----:%s",data)
             except Exception:
                 data = {}
             ret = {"err": None, "data": getattr(JudgeServer, path)(**data)}
